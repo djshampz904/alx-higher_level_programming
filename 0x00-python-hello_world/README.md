@@ -5,3 +5,4 @@ Running python script
 Floating point 
 3 - repeating strings
 6 - concatination of strings
+7 - copy cut and paste
