@@ -4,3 +4,4 @@ Running python script
 3 - f strings
 Floating point 
 3 - repeating strings
+6 - concatination of strings
