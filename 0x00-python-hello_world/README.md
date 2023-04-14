@@ -3,3 +3,4 @@ Running python script
 2 - python script printing a string
 3 - f strings
 Floating point 
+3 - repeating strings
