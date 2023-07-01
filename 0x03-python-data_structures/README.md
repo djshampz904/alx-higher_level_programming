@@ -5,3 +5,4 @@
 4 - replace element in a list
 5 - removing c
 6 - print matrix
+7 - add tuples
