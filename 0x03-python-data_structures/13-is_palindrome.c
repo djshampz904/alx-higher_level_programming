@@ -11,6 +11,7 @@ int is_palindrome(listint_t **head)
 	{
 		return (0);
 	}
+
 	listint_t *slow;
 	listint_t *fast;
 	listint_t *prev;
