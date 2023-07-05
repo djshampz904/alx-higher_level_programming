@@ -8,5 +8,4 @@ def multiply_by_2(a_dictionary):
 
     for key in mykeys:
         mydict[key] = mydict[key] * 2
-
     return(mydict)
