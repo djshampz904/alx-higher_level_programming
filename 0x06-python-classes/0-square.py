@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-'''Creaating and empty class'''
+# 0-square.py by Ehoneah Obed
+"""Defines a square """
 
 
 class Square:
-    '''Class is empty'''
+    """Does nothing"""
     pass
