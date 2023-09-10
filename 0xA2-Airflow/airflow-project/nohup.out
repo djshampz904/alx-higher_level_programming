@@ -1,0 +1,392 @@
+
+airflow command error: unrecognized arguments: port 8080, see help above.
+Usage: airflow [-h] GROUP_OR_COMMAND ...
+
+Positional Arguments:
+  GROUP_OR_COMMAND
+    
+    Groups:
+      config         View configuration
+      connections    Manage connections
+      dags           Manage DAGs
+      db             Database operations
+      jobs           Manage jobs
+      pools          Manage pools
+      providers      Display providers
+      roles          Manage roles
+      tasks          Manage tasks
+      users          Manage users
+      variables      Manage variables
+    
+    Commands:
+      cheat-sheet    Display cheat sheet
+      dag-processor  Start a standalone Dag Processor instance
+      info           Show information about current Airflow and environment
+      kerberos       Start a kerberos ticket renewer
+      plugins        Dump information about loaded plugins
+      rotate-fernet-key
+                     Rotate encrypted connection credentials and variables
+      scheduler      Start a scheduler instance
+      standalone     Run an all-in-one copy of Airflow
+      sync-perm      Update permissions for existing roles and optionally DAGs
+      triggerer      Start a triggerer instance
+      version        Show the version
+      webserver      Start a Airflow webserver instance
+
+Optional Arguments:
+  -h, --help         show this help message and exit
+[[34m2023-09-10T12:19:05.428+0000[0m] {[34mconfiguration.py:[0m2066} INFO[0m - Creating new FAB webserver config file in: /root/airflow/webserver_config.py[0m
+/usr/local/lib/python3.8/dist-packages/flask_limiter/extension.py:336 UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+[[34m2023-09-10T12:19:11.337+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.349+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:11.359+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.370+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:11.381+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.390+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:11.402+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.411+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:11.421+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.431+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:11.455+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.465+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:11.514+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.523+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:11.534+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.543+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:11.602+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.614+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:11.624+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.634+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:11.692+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.702+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:11.713+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.723+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:11.734+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.743+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:11.754+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.765+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:11.775+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.785+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:11.814+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.828+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:11.878+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.889+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:11.900+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.911+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:11.922+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.934+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:11.960+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.971+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:11.982+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:11.993+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.060+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.071+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.082+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.093+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.150+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.161+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.171+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.181+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.219+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.231+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.244+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.255+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.320+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.332+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.344+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.356+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.367+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.377+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.388+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.409+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.421+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.432+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.504+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.517+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.530+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.543+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.556+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.568+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.581+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.592+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.605+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.616+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.642+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.654+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.667+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.677+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.716+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.727+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.738+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.749+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.787+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.799+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.809+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.821+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.884+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.896+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.906+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.918+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.929+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.940+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.951+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.963+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:12.973+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:12.990+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:13.064+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:13.076+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:13.090+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:13.103+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:13.119+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:13.131+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:13.144+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:13.157+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:13.206+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:13.219+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:13.258+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:13.271+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:13.291+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:13.318+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:13.338+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:13.350+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:13.371+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:13.384+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:13.405+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:13.418+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:14.637+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:14.657+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:14.673+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:14.985+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:15.123+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:15.320+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:15.345+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:15.618+0000[0m] {[34mmanager.py:[0m239} INFO[0m - Inserted Role: %s[0m
+[[34m2023-09-10T12:19:15.631+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:15.637+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:15.649+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:15.655+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:15.662+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:15.668+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:15.675+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:15.686+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:15.692+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:15.699+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:15.705+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:15.711+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:15.718+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:15.724+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:15.731+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:15.745+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:15.752+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:15.758+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:15.765+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:15.826+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:15.905+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:15.935+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:15.984+0000[0m] {[34mmanager.py:[0m499} INFO[0m - Created Permission View: %s[0m
+[[34m2023-09-10T12:19:15.992+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.003+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.012+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.021+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.033+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.044+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.063+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.075+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.087+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.102+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.112+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.122+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.128+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.134+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.142+0000[0m] {[34mmanager.py:[0m239} INFO[0m - Inserted Role: %s[0m
+[[34m2023-09-10T12:19:16.152+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.160+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.174+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.182+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.190+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.198+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.211+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.219+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.226+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.235+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.247+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.260+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.269+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.277+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.296+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.307+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.322+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.339+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.349+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.442+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.459+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.469+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.475+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.483+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.503+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.509+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.522+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.539+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.548+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.558+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.568+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.577+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.587+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.596+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.605+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.615+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.624+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.632+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.640+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.648+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.654+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.660+0000[0m] {[34mmanager.py:[0m239} INFO[0m - Inserted Role: %s[0m
+[[34m2023-09-10T12:19:16.669+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.675+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.687+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.692+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.699+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.705+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.716+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.721+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.728+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.739+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.764+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.774+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.781+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.787+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.792+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.800+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.805+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.816+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.822+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.834+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.840+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.847+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.853+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.859+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.866+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.871+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.891+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.898+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.904+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.910+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.916+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.922+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.929+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.935+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.941+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.948+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.954+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.960+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.967+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.974+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.980+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.987+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:16.994+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.000+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.006+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.013+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.019+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.026+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.034+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.040+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.051+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.058+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.067+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.073+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.081+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.088+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.095+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.103+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.109+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.117+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.124+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.131+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.138+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.151+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.158+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.166+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.176+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.184+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.191+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.203+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.236+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.248+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[[34m2023-09-10T12:19:17.277+0000[0m] {[34mmanager.py:[0m558} INFO[0m - Added Permission %s to role %s[0m
+[2023-09-10 12:19:17 +0000] [26445] [INFO] Starting gunicorn 21.2.0
+[2023-09-10 12:19:17 +0000] [26445] [INFO] Listening at: http://0.0.0.0:8080 (26445)
+[2023-09-10 12:19:17 +0000] [26445] [INFO] Using worker: sync
+[2023-09-10 12:19:17 +0000] [26462] [INFO] Booting worker with pid: 26462
+[2023-09-10 12:19:17 +0000] [26463] [INFO] Booting worker with pid: 26463
+[2023-09-10 12:19:17 +0000] [26464] [INFO] Booting worker with pid: 26464
+[2023-09-10 12:19:17 +0000] [26465] [INFO] Booting worker with pid: 26465
+[2023-09-10 12:24:36 +0000] [26445] [INFO] Handling signal: hup
+  ____________       _____________
+ ____    |__( )_________  __/__  /________      __
+____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+ _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+Running the Gunicorn Server with:
+Workers: 4 sync
+Host: 0.0.0.0:8080
+Timeout: 120
+Logfiles: - -
+Access Logformat: 
+=================================================================
+[[34m2023-09-10T12:24:36.780+0000[0m] {[34mwebserver_command.py:[0m440} INFO[0m - Received signal: 15. Closing gunicorn.[0m
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/usr/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+RuntimeError: reentrant call inside <_io.BufferedWriter name='<stderr>'>
+Call stack:
+  File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/__main__.py", line 7, in <module>
+    run()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/wsgiapp.py", line 67, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 236, in run
+    super().run()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 223, in run
+    self.log.info("Handling signal: %s", signame)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/glogging.py", line 278, in info
+    self.error_log.info(msg, *args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1446, in info
+    self._log(INFO, msg, args, **kwargs)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 954, in handle
+    self.emit(record)
+  File "/usr/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/usr/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/arbiter.py", line 554, in reap_workers
+    self.log.error(msg)
+  File "/usr/local/lib/python3.8/dist-packages/gunicorn/glogging.py", line 272, in error
+    self.error_log.error(msg, *args, **kwargs)
+Message: 'Worker (pid:26465) was sent SIGHUP!'
+Arguments: ()
+[2023-09-10 12:24:38 +0000] [26445] [INFO] Hang up: Master
+[2023-09-10 12:24:38 +0000] [27614] [INFO] Booting worker with pid: 27614
+[2023-09-10 12:24:38 +0000] [27615] [INFO] Booting worker with pid: 27615
+[2023-09-10 12:24:38 +0000] [27617] [INFO] Booting worker with pid: 27617
+[2023-09-10 12:24:38 +0000] [26445] [INFO] Handling signal: term
+[2023-09-10 12:24:38 +0000] [27615] [INFO] Worker exiting (pid: 27615)
+[2023-09-10 12:24:38 +0000] [27618] [INFO] Booting worker with pid: 27618
+[2023-09-10 12:24:38 +0000] [27614] [INFO] Worker exiting (pid: 27614)
+                                                                                                                                            

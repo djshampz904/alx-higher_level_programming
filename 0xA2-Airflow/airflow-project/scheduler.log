@@ -1,0 +1,18 @@
+nohup: ignoring input
+  ____________       _____________
+ ____    |__( )_________  __/__  /________      __
+____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+ _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+[[34m2023-09-10T12:32:59.874+0000[0m] {[34mexecutor_loader.py:[0m117} INFO[0m - Loaded executor: SequentialExecutor[0m
+[2023-09-10 12:33:00 +0000] [10437] [INFO] Starting gunicorn 21.2.0
+[2023-09-10 12:33:00 +0000] [10437] [INFO] Listening at: http://[::]:8793 (10437)
+[2023-09-10 12:33:00 +0000] [10437] [INFO] Using worker: sync
+[2023-09-10 12:33:00 +0000] [10438] [INFO] Booting worker with pid: 10438
+[[34m2023-09-10T12:33:00.100+0000[0m] {[34mscheduler_job_runner.py:[0m798} INFO[0m - Starting the scheduler[0m
+[[34m2023-09-10T12:33:00.103+0000[0m] {[34mscheduler_job_runner.py:[0m805} INFO[0m - Processing each file at most -1 times[0m
+[2023-09-10 12:33:00 +0000] [10441] [INFO] Booting worker with pid: 10441
+[[34m2023-09-10T12:33:00.112+0000[0m] {[34mmanager.py:[0m166} INFO[0m - Launched DagFileProcessorManager with pid: 10442[0m
+[[34m2023-09-10T12:33:00.116+0000[0m] {[34mscheduler_job_runner.py:[0m1586} INFO[0m - Adopting or resetting orphaned tasks for active dag runs[0m
+[[34m2023-09-10T12:33:00.124+0000[0m] {[34msettings.py:[0m60} INFO[0m - Configured default timezone Timezone('UTC')[0m
+[2023-09-10T12:33:00.195+0000] {manager.py:410} WARNING - Because we cannot use more than 1 thread (parsing_processes = 2) when using sqlite. So we set parallelism to 1.
