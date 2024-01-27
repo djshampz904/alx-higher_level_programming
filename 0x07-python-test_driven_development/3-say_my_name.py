@@ -22,10 +22,14 @@ def say_my_name(first_name, last_name=""):
 
     """
 
+    #echeck if first name is a string and its not only whitespaces
     if type(first_name) is not str:
+        raise TypeError("first_name must be a string")
+    #check if first name is white space
+    if first_name.strip() == "":
         raise TypeError("first_name must be a string")
 
     if type(last_name) is not str:
         raise TypeError("last_name must be a string")
 
-    print("My name is {} {}".format(first_name, last_name))
+    print("My name is {} {}".format(first_name.strip(), last_name.strip()))
