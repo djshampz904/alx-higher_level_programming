@@ -5,6 +5,9 @@ Class that defines a geometry
 
 
 class BaseGeometry:
+    """
+    Class that defines a geometry
+    """
 
     def area(self):
         """
