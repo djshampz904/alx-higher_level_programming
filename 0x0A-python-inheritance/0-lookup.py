@@ -1,6 +1,7 @@
 #!/bin/usr/python3
 """
-Class look up 
+ This module returns the list of available attributes
+    and methods of an object
 """
 
 
