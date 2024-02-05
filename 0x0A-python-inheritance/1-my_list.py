@@ -3,6 +3,7 @@
 This module returns the list of available attributes
 """
 
+
 class MyList(list):
     """inherits from list"""
     def print_sorted(self):
