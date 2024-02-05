@@ -1,4 +1,9 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
+"""
+Empty class BaseGeometry
+"""
+
+
 class BaseGeometry:
     """
     Write an empty class BaseGeometry.
