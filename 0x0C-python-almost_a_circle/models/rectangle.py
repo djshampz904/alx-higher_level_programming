@@ -13,7 +13,7 @@ class Rectangle(Base):
         if type(width) is not int:
             raise TypeError("width must be an integer")
         elif width <= 0:
-                raise ValueError("width must be > 0")
+            raise ValueError("width must be > 0")
 
         self.__width = width
 
@@ -100,5 +100,39 @@ class Rectangle(Base):
 
     def display(self):
         """ Print rectangle with # """
+        for i in range(self.__y):
+            print()
         for i in range(self.__height):
-            print("#" * self.__width)
+            print(" " * self.__x + "#" * self.__width)
+
+    def __str__(self):
+        return "[{}] ({}) {}/{} - {}/{}".format(
+            self.__class__.__name__, self.id, self.__x,
+            self.__y, self.__width, self.__height)
+
+    def update(self, *args, **kwargs):
+        """ Update the rectangle """
+        if args:
+            for i, value in enumerate(args):
+                if i == 0:
+                    self.id = value
+                elif i == 1:
+                    self.__width = value
+                elif i == 2:
+                    self.__height = value
+                elif i == 3:
+                    self.__x = value
+                elif i == 4:
+                    self.__y = value
+        else:
+            for key, value in kwargs.items():
+                if key == "id":
+                    self.id = value
+                elif key == "width":
+                    self.__width = value
+                elif key == "height":
+                    self.__height = value
+                elif key == "x":
+                    self.__x = value
+                elif key == "y":
+                    self.__y = value
