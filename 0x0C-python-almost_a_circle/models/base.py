@@ -37,3 +37,20 @@ class Base:
             else:
                 list_dicts = [obj.to_dictionary() for obj in list_objs]
                 f.write(cls.to_json_string(list_dicts))
+
+    def from_json_string(json_string):
+        """ Return list of dictionaries from JSON string """
+        import json
+        if json_string is None or json_string == "":
+            return []
+        return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """ Create an instance with attributes set """
+        if cls.__name__ == "Rectangle":
+            new = cls(1, 1)
+        elif cls.__name__ == "Square":
+            new = cls(1)
+        new.update(**dictionary)
+        return new
