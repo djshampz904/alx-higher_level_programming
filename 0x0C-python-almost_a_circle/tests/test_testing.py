@@ -41,7 +41,7 @@ class TestMaxInteger(unittest.TestCase):
         base.Base._Base__nb_objects = 0
         rect = rectangle.Rectangle(10, 10, 10, 10, 10)
         rect.update(89)
-        self.assertEqual(rect.__str__(), "[Rectangle] (10) 10/10 - 89/10")
+        self.assertEqual(rect.__str__(), "[Rectangle] (89) 10/10 - 10/10")
 
     def test_rectangle_update_kwargs(self):
         base.Base._Base__nb_objects = 0
