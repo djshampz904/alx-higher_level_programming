@@ -10,6 +10,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(base.Base().id, 2)
         self.assertEqual(base.Base(id=10).id, 10)
         self.assertEqual(base.Base().id, 3)
+        self.assertEqual(base.Base().id, 4)
 
     def test_rectangle_class(self):
         base.Base._Base__nb_objects = 0
@@ -17,6 +18,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(rectangle.Rectangle(2, 10).id, 2)
         self.assertEqual(rectangle.Rectangle(10, 2, 0, 0, 12).id, 12)
         self.assertEqual(rectangle.Rectangle(2, 10, 0, 0, 13).id, 13)
+        self.assertEqual(rectangle.Rectangle(10, 2, 0, 0, 14).id, 14)
 
     def test_rectangle_exeptions(self):
         with self.assertRaises(TypeError):
@@ -89,3 +91,82 @@ class TestMaxInteger(unittest.TestCase):
         r2 = rectangle.Rectangle.create(**r1_dictionary)
         self.assertEqual(r1.__str__(), r2.__str__())
         self.assertFalse(r1 is r2)
+
+    def test_load_from_file(self):
+        base.Base._Base__nb_objects = 0
+        r1 = rectangle.Rectangle(10, 7, 2, 8)
+        r2 = rectangle.Rectangle(2, 4)
+        list_rectangles_input = [r1, r2]
+        rectangle.Rectangle.save_to_file(list_rectangles_input)
+        list_rectangles_output = rectangle.Rectangle.load_from_file()
+        self.assertEqual(list_rectangles_output[0].__str__(), r1.__str__())
+        self.assertEqual(list_rectangles_output[1].__str__(), r2.__str__())
+
+    def test_square_load_from_file(self):
+        base.Base._Base__nb_objects = 0
+        s1 = square.Square(5)
+        s2 = square.Square(7, 9, 1)
+        list_squares_input = [s1, s2]
+        square.Square.save_to_file(list_squares_input)
+        list_squares_output = square.Square.load_from_file()
+        self.assertEqual(list_squares_output[0].__str__(), s1.__str__())
+        self.assertEqual(list_squares_output[1].__str__(), s2.__str__())
+
+    def test_square_update_kwargs(self):
+        base.Base._Base__nb_objects = 0
+        sqr = square.Square(5)
+        sqr.update(size=7, y=1, x=9, id=10)
+        self.assertEqual(sqr.__str__(), "[Square] (10) 9/1 - 7")
+
+    def test_square_str(self):
+        base.Base._Base__nb_objects = 0
+        self.assertEqual(square.Square(5).__str__(), "[Square] (1) 0/0 - 5")
+
+    def test_square_area(self):
+        base.Base._Base__nb_objects = 0
+        self.assertEqual(square.Square(5).area(), 25)
+
+    def test_square_display(self):
+        base.Base._Base__nb_objects = 0
+        self.assertEqual(square.Square(2).display(), None)
+
+    def test_square_exeptions(self):
+        with self.assertRaises(TypeError):
+            square.Square("2")
+        with self.assertRaises(ValueError):
+            square.Square(2, 3, -1)
+
+    def test_square_size(self):
+        base.Base._Base__nb_objects = 0
+        sqr = square.Square(5)
+        self.assertEqual(sqr.size, 5)
+        sqr.size = 10
+        self.assertEqual(sqr.size, 10)
+        with self.assertRaises(TypeError):
+            sqr.size = "9"
+        with self.assertRaises(ValueError):
+            sqr.size = -10
+        with self.assertRaises(ValueError):
+            sqr.size = 0
+        with self.assertRaises(ValueError):
+            sqr.size = 0
+
+    def test_square_update(self):
+        base.Base._Base__nb_objects = 0
+        sqr = square.Square(5)
+        sqr.update(10)
+        self.assertEqual(sqr.id, 10)
+
+    def test_square_update_kwargs(self):
+        base.Base._Base__nb_objects = 0
+        sqr = square.Square(5)
+        sqr.update(size=7, y=1, x=9, id=10)
+        self.assertEqual(sqr.__str__(), "[Square] (10) 9/1 - 7")
+
+    def test_square_to_dictionary(self):
+        base.Base._Base__nb_objects = 0
+        self.assertEqual(square.Square(10, 2, 1).to_dictionary(),
+                         {'id': 1, 'x': 2, 'size': 10, 'y': 1})
+
+if __name__ == "__main__":
+    unittest.main()
