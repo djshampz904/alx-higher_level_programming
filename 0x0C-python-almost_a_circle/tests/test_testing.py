@@ -82,4 +82,10 @@ class TestMaxInteger(unittest.TestCase):
         list_output = rectangle.Rectangle.from_json_string(json_list_input)
         self.assertEqual(list_output, list_input)
 
-
+    def test_create(self):
+        base.Base._Base__nb_objects = 0
+        r1 = rectangle.Rectangle(3, 5, 1, 9)
+        r1_dictionary = r1.to_dictionary()
+        r2 = rectangle.Rectangle.create(**r1_dictionary)
+        self.assertEqual(r1.__str__(), r2.__str__())
+        self.assertFalse(r1 is r2)
