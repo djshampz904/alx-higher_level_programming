@@ -105,13 +105,13 @@ class TestMaxInteger(unittest.TestCase):
         rect4 = rectangle.Rectangle(10, 10, 10, 10, 10)
 
         rect1.update(89)
-        self.assertEqual(rect1.__str__(), "[Rectangle] (89) 10/10 - 10/10")
+        self.assertEqual(rect1.__str__(), "[Rectangle] (10) 10/10 - 89/10")
         rect2.update(89, 2)
-        self.assertEqual(rect2.__str__(), "[Rectangle] (89) 10/10 - 2/10")
+        self.assertEqual(rect2.__str__(), "[Rectangle] (10) 10/10 - 89/2")
         rect3.update(89, 2, 3)
-        self.assertEqual(rect3.__str__(), "[Rectangle] (89) 10/10 - 2/3")
+        self.assertEqual(rect3.__str__(), "[Rectangle] (10) 3/10 - 89/2")
         rect4.update(89, 2, 3, 4)
-        self.assertEqual(rect4.__str__(), "[Rectangle] (89) 4/10 - 2/3")
+        self.assertEqual(rect4.__str__(), "[Rectangle] (10) 3/4 - 89/2")
 
         base.Base._Base__nb_objects = 0
         
@@ -150,3 +150,17 @@ class TestMaxInteger(unittest.TestCase):
         
 
         base.Base._Base__nb_objects = 0
+        
+    def test_square_update(self):
+        s1 = square.Square(5)
+        self.assertEqual(s1.height, 5)
+        s1.update(10)
+        self.assertEqual(s1.id, 10)
+
+    def test_to_dictionary(self):
+        s1 = rectangle.Rectangle(10, 2, 1)
+        s1_dictionary = s1.to_dictionary()
+        self.assertEqual(s1_dictionary, {'id': 1, 'x': 2, 'size': 10, 'y': 1})
+
+        base.Base._Base__nb_objects = 0
+

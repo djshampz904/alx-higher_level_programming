@@ -115,15 +115,15 @@ class Rectangle(Base):
         if args:
             for i, value in enumerate(args):
                 if i == 0:
-                    self.id = value
-                elif i == 1:
                     self.__width = value
-                elif i == 2:
+                elif i == 1:
                     self.__height = value
-                elif i == 3:
+                elif i == 2:
                     self.__x = value
-                elif i == 4:
+                elif i == 3:
                     self.__y = value
+                elif i == 4:
+                    self.id = value
         else:
             for key, value in kwargs.items():
                 if key == "id":
@@ -136,3 +136,13 @@ class Rectangle(Base):
                     self.__x = value
                 elif key == "y":
                     self.__y = value
+
+    def to_dictionary(self):
+        """ Return dictionary representation of rectangle """
+        return {
+            "x": self.__x,
+            "y": self.__y,
+            "id": self.id,
+            "height": self.__height,
+            "width": self.__width
+        }
