@@ -157,10 +157,28 @@ class TestMaxInteger(unittest.TestCase):
         s1.update(10)
         self.assertEqual(s1.id, 10)
 
+        base.Base._Base__nb_objects = 0
+
     def test_to_dictionary(self):
-        s1 = rectangle.Rectangle(10, 2, 1)
+        s1 = rectangle.Rectangle(10, 2, 1, 9)
+        s1_dictionary = s1.to_dictionary()
+        self.assertEqual(s1_dictionary, {'x': 1, 'y': 9, 'id': 1, 'height': 2, 'width': 10})
+
+        base.Base._Base__nb_objects = 0
+
+    def test_square_to_dictionary(self):
+        s1 = square.Square(10, 2, 1)
         s1_dictionary = s1.to_dictionary()
         self.assertEqual(s1_dictionary, {'id': 1, 'x': 2, 'size': 10, 'y': 1})
 
         base.Base._Base__nb_objects = 0
 
+    def test_save_to_file(self):
+        r1 = rectangle.Rectangle(10, 7, 2, 8)
+        r2 = rectangle.Rectangle(2, 4)
+        list_rectangles_input = [r1, r2]
+        rectangle.Rectangle.save_to_file(list_rectangles_input)
+        with open("Rectangle.json", "r") as file:
+            self.assertEqual(len(file.read()), 105)
+
+        base.Base._Base__nb_objects = 0
