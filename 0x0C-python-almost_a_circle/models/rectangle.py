@@ -117,9 +117,9 @@ class Rectangle(Base):
                 if i == 0:
                     self.id = value
                 elif i == 1:
-                    self.width= value
+                    self.width = value
                 elif i == 2:
-                    self.height= value
+                    self.height = value
                 elif i == 3:
                     self.x = value
                 elif i == 4:
