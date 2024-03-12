@@ -22,3 +22,12 @@ bash
 $ cat 1-create_database_if_missing.sql | mysql -hlocalhost -uroot -p
 ```
 
+## 2-remove_database.sql
+
+script that deletes the database hbtn_0c_0 in your MySQL server.
+
+bash
+```
+$ cat 2-remove_database.sql | mysql -hlocalhost -uroot -p
+```
+
