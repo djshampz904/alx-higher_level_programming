@@ -13,3 +13,12 @@ bash
 $ cat 0-list_databases.sql | mysql -hlocalhost -uroot -p
 ```
 
+## 1-create_database_if_missing.sql
+
+script that creates the database hbtn_0c_0 in your MySQL server.
+
+bash
+```
+$ cat 1-create_database_if_missing.sql | mysql -hlocalhost -uroot -p
+```
+
