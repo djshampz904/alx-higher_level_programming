@@ -9,7 +9,7 @@
 -- The database name will be passed as an argument of the mysql command
 SELECT
     tg.name,
-    count(ts.title)
+    count(ts.title) as number_of_shows
 FROM tv_genres tg
 JOIN tv_show_genres tsg ON tg.id = tsg.genre_id
 JOIN tv_shows ts ON ts.id = tsg.show_id
