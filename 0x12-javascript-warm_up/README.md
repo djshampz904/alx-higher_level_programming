@@ -2,7 +2,7 @@
 ## Description
 This project is about the basics of Javascript
 ## Files
-### <a href="0x12-javascript-warm_up/0-javascript_is_amazing.js">0-javascript_is_amazing.js</a>
+### <a href="https://github.com/djshampz904/alx-higher_level_programming/blob/master/0x12-javascript-warm_up/0-javascript_is_amazing.js">0-javascript_is_amazing.js</a>
 - this file prints "Javascript is amazing"
 - Usage: `./0-javascript_is_amazing.js`
 - Output: `Javascript is amazing`
@@ -29,4 +29,10 @@ This project is about the basics of Javascript
 - Note: the output is printed in the same order as the file
 - Note: the arguments are passed as strings
 ### <a href="">5-to_integer.js</a>
+- this file prints an integer if the first argument passed is an integer
+- Usage: `./5-to_integer.js 89`
+- Output: `89`
+- Note: the output is printed in the same order as the file
+- Note: the argument is passed as a string
+### <a href="">6-multi_languages_loop.js</a>
 
