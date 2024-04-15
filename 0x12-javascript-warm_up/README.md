@@ -1,4 +1,4 @@
-#Javascript warmup
+##Javascript warmup
 ## Description
 This project is about the basics of Javascript
 ## Files
