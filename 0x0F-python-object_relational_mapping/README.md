@@ -42,4 +42,10 @@ This project is about Object Relational Mapping (ORM) using SQLAlchemy. It cover
 - Note: this script uses the module `declarative_base` to create a base class for declarative class definitions
   - 
 - Note: this script uses the module `SQLAlchemy` to connect to a MySQL database
+#### <a>6-model_state.py</a>
+- This Python file contains the class definition of a `State` and an instance `Base` of `declarative_base()`.
+- Usage: `./6-model_state.py`
+- Note: this script uses the module `declarative_base` to create a base class for declarative class definitions
+- Note: this script uses the module `SQLAlchemy` to connect to a MySQL database
+#### <a>7-model_state_fetch_all.py</a>
 
