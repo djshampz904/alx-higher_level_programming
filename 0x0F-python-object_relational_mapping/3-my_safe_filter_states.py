@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-# script should take 4 arguments: mysql username, mysql password, database name and state name searched(safe from MySQL injection)
+# script should take 4 arguments: mysql username, mysql password,
+# database name and state name searched(safe from MySQL injection)
 import MySQLdb
 import sys
 
@@ -16,7 +17,8 @@ if __name__ == "__main__":
     searched = sys.argv[4]
     cur = db.cursor()
 
-    cur.execute("SELECT * FROM states WHERE name LIKE %s", (searched,))
+    cur.execute("SELECT * FROM states WHERE name LIKE %s",
+                (searched,))
 
     for row in cur.fetchall():
         print(row)
