@@ -16,7 +16,7 @@ if __name__ == "__main__":
     searched = sys.argv[4]
     cur = db.cursor()
 
-    cur.execute("SELECT * FROM states WHERE name LIKE BINARY %s "
+    cur.execute("SELECT * FROM states WHERE name LIKE %s "
                 "ORDER BY states.id ASC", (searched,))
 
     for row in cur.fetchall():
