@@ -11,8 +11,9 @@ if __name__ == "__main__":
     cur = db.cursor()
     state_name = sys.argv[4]
 
-    cur.execute("""SELECT c.name FROM cities AS c INNER JOIN states as s on c.state_id = s.id
-                WHERE s.name = %s order by c.id""", (state_name,))
+    cur.execute("""SELECT c.name FROM cities AS c INNER JOIN states
+                as s on c.state_id = s.id WHERE s.name = %s order
+                by c.id""", (state_name,))
 
     rows = cur.fetchall()
 
@@ -20,4 +21,3 @@ if __name__ == "__main__":
     unique_rows = list(dict.fromkeys(row[0] for row in rows))
 
     print(", ".join(unique_rows))
-
