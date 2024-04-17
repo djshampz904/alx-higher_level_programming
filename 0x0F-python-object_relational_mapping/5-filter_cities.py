@@ -21,3 +21,6 @@ if __name__ == "__main__":
     unique_rows = list(dict.fromkeys(row[0] for row in rows))
 
     print(", ".join(unique_rows))
+
+    cur.clooe()
+    db.close()
