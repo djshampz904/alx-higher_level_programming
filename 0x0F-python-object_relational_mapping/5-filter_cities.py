@@ -1,4 +1,4 @@
-#!/home/shvmpz/PycharmProjects/alx-higher_level_programming/0x0F-python-object_relational_mapping/myvenv/bin/python3.11
+#!/usr/bin/python3
 import MySQLdb
 import sys
 
