@@ -17,9 +17,7 @@ if __name__ == "__main__":
     rows = cur.fetchall()
 
     # Remove duplicates while preserving order
-    unique_rows = list(dict.fromkeys(row[0] for row in rows))
-
-    print(", ".join(unique_rows))
-
-    cur.clooe()
+    tmp = list(row[0] for row in rows)
+    print(*tmp, sep=", ")
+    cur.close()
     db.close()
