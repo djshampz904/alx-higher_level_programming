@@ -12,8 +12,7 @@ if __name__ == "__main__":
     state_name = sys.argv[4]
 
     cur.execute("""SELECT c.name FROM cities AS c INNER JOIN states
-                as s on c.state_id = s.id WHERE s.name = %s order
-                by c.id""", (state_name,))
+                as s on c.state_id = s.id WHERE s.name = %s""", (state_name,))
 
     rows = cur.fetchall()
 
