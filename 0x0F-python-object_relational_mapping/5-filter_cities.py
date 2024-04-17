@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Select cites based on state passed as argument
+""" Select cites based on state passed as argument """
 import MySQLdb
 import sys
 
